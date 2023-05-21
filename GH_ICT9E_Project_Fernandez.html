@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Length Conversion Calculator</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="x-icon" href="https://play-lh.googleusercontent.com/jLwMMCQ_nU2Mmx-0M8h6FU-F9tq36uG2Z4EwbUZ7rfVQMcmqi2lCpGeozHHG_hyj8RhI">
+</head>
+<body style="background-size: 100%;" background="https://images.unsplash.com/photo-1611077544066-4522a88996aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1lYXN1cmVtZW50fGVufDB8fDB8fHww&w=1000&q=80">
+	<br><br><br><br><br><br>
+	<table class="container table table-bordered" style="font-family: Bradley Hand ITC; text-align: center; background-color: #00FFC0CB;" >
+		<tr>
+			<td style="font-size: 50px;"><b>📐Calculator: Length Conversion📏</b></td>
+		</tr>			
+		<tr style="font-size: 45px;">
+			<td><b>VALUE:</b>
+				<br>
+				<input type="text" id="value1" placeholder="Millimeter">
+				<br><br>
+				<input type="submit" value="Centimeters" onclick="myFunction1()">
+				<input type="submit" value="Meters" onclick="myFunction2()">
+				<input type="submit" value="Kilometers" onclick="myFunction3()">
+				<script>
+					function myFunction1() {
+					var num1 = document.getElementById('value1').value; // This is the value to be converted from millimeters to centimeters.
+					var cm = num1 / 10;
+					window.alert(num1 / 10).innerHTML = cm;
+					}
+				</script>
+				<script>
+					function myFunction2() {
+					var num1 = document.getElementById('value1').value; // This is the value to be converted from millimeters to meters.
+					var m = num1 / 1000;
+					window.alert(num1 / 1000).innerHTML = m;
+					}
+				</script>
+				<script>
+					function myFunction3() {
+					var num1 = document.getElementById('value1').value; // This is the value to be converted from millimeters to kilometers.
+					var km = num1 / 1000000;
+					window.alert(num1 / 1000000).innerHTML = km;
+					}
+				</script>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
